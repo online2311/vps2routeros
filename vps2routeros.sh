@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # VPS2RouterOS
-# https://github.com/Jamesits/vps2routeros
+# https://github.com/online2311/vps2routeros
 # This script will cause permanent data loss
 # Please read the documentation prior to running this
 # You have been warned
@@ -30,7 +30,7 @@ ADDRESS=$(ip addr show $MAIN_INTERFACE | grep global | cut -d' ' -f 6 | head -n 
 GATEWAY=$(ip route list | grep default | cut -d' ' -f 3)
 
 # URL to RouterOS CHR
-ROUTEROS_URL=https://download2.mikrotik.com/routeros/6.43.14/chr-6.43.14.img.zip
+ROUTEROS_URL=https://download.mikrotik.com/routeros/6.46.8/chr-6.46.8.img.zip
 
 # Note: you can customize commands to be executed when RouterOS initializes.
 # Search `Auto configure script` below
